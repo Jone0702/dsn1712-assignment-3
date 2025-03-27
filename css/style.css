@@ -1,0 +1,144 @@
+header{
+    background-color: #000;
+    color: #fff
+
+}
+img{
+    max-width: 100%;
+}
+.wrapper{
+  max-width: 940px;
+  margin: 0 auto; 
+  text-align: center; 
+}
+
+header .wrapper{
+    display: flex;
+
+justify-content: space-between;
+align-items: center;
+
+}
+
+.unordered{
+    display: flex;
+    gap: 20px;
+   
+}
+
+#hero{
+ height:600px ; 
+ background-image: url(../images/hands-typing.jpg);
+ background-position: center;  
+ background-size: cover;
+ filter: grayscale(70%);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+#hero h1{
+    max-width: 60%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: #000;
+}
+
+#about-me .wrapper{
+    display: flex;
+    align-items: center;
+}
+
+#about-me .wrapper img{
+    width: 35%;
+}
+
+#services{
+    background-color: #fafafa;
+}
+
+#services h2{
+    max-width: 100%;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+
+.grid article {
+    background-color: #fff;
+      padding: 1em;
+      
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .grid article h3 {
+    margin-bottom: 0;
+    }
+    
+    .grid article p {
+    padding-bottom: 2em;
+    }
+    
+    .grid a:link,
+    .grid a:visited {
+      display: inline-block;
+      padding: .8em 1em;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      border: 2px solid #000;
+      border-radius: 4px;
+      
+      margin-top: auto;
+    }
+#work h2, p {
+    text-align: center;
+    max-width: 70%;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "div1 div1 div1 div2 div2 div2"
+    "div3 div3 div4 div4 div5 div5"
+
+    
+    ;
+}
+
+.box-1{
+    grid-area: div1;
+}
+
+.box-2{
+    grid-area: div2;
+}
+
+.box-3{
+    grid-area: div3;
+}
+
+.box-4{
+    grid-area: div4;
+}
+
+.box-5{
+    grid-area: div5;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin: 5%
+
+}
